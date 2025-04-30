@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        tools:context=".OrderDetailsSeller">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/darker"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/Rlayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp">
+
+                <ImageButton
+                    android:id="@+id/backbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_back"/>
+                <TextView
+                    android:id="@+id/bacttxt"
+                    android:textColor="@color/black"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:text="@string/Back"/>
+                <TextView
+                    android:id="@+id/pagetitle"
+                    android:shadowColor="#808080"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:layout_marginEnd="30dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:text="Order Details"/>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp">
+                <TableLayout
+                    android:id="@+id/tb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    >
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="OrderID: "/>
+                        <TextView
+                            android:id="@+id/orderidtv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="34234"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Date: "/>
+                        <TextView
+                            android:id="@+id/datetv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="23423424"/>
+                    </TableRow>
+
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Order Status: "/>
+                        <TextView
+                            android:id="@+id/orderstatustv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="In fsdfs"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Buyer's Email: "/>
+                        <TextView
+                            android:id="@+id/buyeremailtv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="buyeremail"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Buyer's Phone: "/>
+                        <TextView
+                            android:id="@+id/buyerphonetv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="buyerphone"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Item(s): "/>
+                        <TextView
+                            android:id="@+id/totalItemtv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="T12"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Amount: "/>
+                        <TextView
+                            android:id="@+id/totalamounttv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="123"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            android:text="Delivery Address: "/>
+                        <TextView
+                            android:id="@+id/daddresstv"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:text="asdfasafafasdfasrwerwrf"/>
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editbtn"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:text="Change Order Status"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:shadowColor="#54FFFFFF"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:textStyle="bold|italic"
+                android:background="@color/white"
+                android:text="    Ordered Items:"
+                android:textSize="17sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@color/white"
+                android:padding="10dp"
+                android:id="@+id/recoItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</ScrollView>

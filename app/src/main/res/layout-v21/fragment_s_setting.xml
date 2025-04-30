@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_profile_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SSetting">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/profile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_profile"
+                app:c_border="true"
+                app:c_border_color="@color/orange"
+                app:c_border_width="1dp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/shopswitch"
+                android:layout_width="wrap_content"
+
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/profile"
+                android:text="@string/Status"
+                android:textColor="@color/orange" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/RLayout1"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="330dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/nametxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"
+                android:text="@string/Name"/>
+
+            <EditText
+                android:id="@+id/namehint"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/namehint"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/shopntxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/namehint"
+                android:text="@string/ShopName"/>
+
+            <EditText
+                android:id="@+id/shophint"
+                android:layout_width="220dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_store"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/shophint"
+                android:layout_below="@id/namehint"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/addresstxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/shophint"
+                android:text="@string/Address"/>
+
+            <EditText
+                android:id="@+id/addresshint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="15dp"
+                android:hint="@string/locationhint"
+                android:layout_below="@+id/addresstxt"
+                android:inputType="textPostalAddress|textMultiLine"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/phonenumbertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/addresshint"
+                android:text="@string/Phone"/>
+
+            <EditText
+                android:id="@+id/phonenumberhint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableStart="@drawable/ic_phonenumber"
+                android:drawablePadding="15dp"
+                android:hint="@string/pnhint"
+                android:layout_below="@+id/phonenumbertxt"
+                android:inputType="phone"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="210dp"
+                android:layout_below="@+id/phonenumberhint"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_btnborder_lighter"
+                app:backgroundTint="@null"
+                android:textColor="@color/black"
+                android:text="@string/Update"
+                android:layout_marginTop="25dp"/>
+
+
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="100dp"
+                android:layout_below="@+id/updatebtn"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_btnborder_lighter"
+                app:backgroundTint="@null"
+                android:textColor="@color/white"
+                android:text="@string/Logout"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="35dp"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+
+</ScrollView>

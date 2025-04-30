@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbg"
+    tools:context=".RegisterSellerActivity">
+
+    <RelativeLayout
+        android:id="@+id/Rlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/bacttxt"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="@string/Back"/>
+
+        <TextView
+            android:id="@+id/registerusertxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:text="@string/Registeruseracc"
+            android:textColor="@color/orange"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sellertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:textColor="@color/white"
+        android:shadowColor="#E1F4511E"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="5"
+        android:layout_marginTop="225dp"
+        android:text="@string/SellerR"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/ic_profile"
+        app:c_border="true"
+        app:c_border_color="@color/orange"
+        app:c_border_width="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sellertxt"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/loginR1">
+
+
+        <EditText
+            android:id="@+id/namehint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_name"
+            android:drawablePadding="15dp"
+            android:hint="@string/namehint"
+            android:layout_below="@+id/nametxt"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/shophint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_store"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/shophint"
+            android:layout_below="@+id/namehint"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/addresshint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/locationhint"
+            android:layout_below="@+id/shophint"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+        <EditText
+            android:id="@+id/phonenumberhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_phonenumber"
+            android:drawablePadding="15dp"
+            android:hint="@string/pnhint"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/addresshint"
+            android:layout_marginEnd="20dp"
+            android:inputType="phone"
+            android:padding="8dp" />
+
+
+        <EditText
+            android:id="@+id/emailhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:hint="@string/emailhint"
+            android:layout_below="@+id/phonenumberhint"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/passwordhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_locker"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/passwordhint"
+            android:layout_below="@+id/emailhint"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+
+
+        <EditText
+            android:id="@+id/passwordhint2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/passwordhint2"
+            android:layout_below="@+id/passwordhint"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+
+
+        <Button
+            android:id="@+id/registerbtn1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btnborder_darker"
+            android:layout_marginStart="160dp"
+            android:layout_below="@+id/passwordhint2"
+            android:layout_marginTop="15dp"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:text="@string/Register"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

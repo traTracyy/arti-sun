@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".UEwallet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/black"
+        android:background="#FFFFFF"
+        android:shadowColor="#808080"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:textStyle="bold"
+        android:text="E-Wallet Balance:"/>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:background="@drawable/shape_leaf"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:id="@+id/balancerl"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#808080"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:text="RM: 123.00"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:id="@+id/topUpButton"
+        android:layout_marginTop="400dp"
+        android:text="Top-Up"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_corner_orange"
+        app:backgroundTint="@null"
+        android:layout_height="wrap_content"/>
+
+
+</FrameLayout>

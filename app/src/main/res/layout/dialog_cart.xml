@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:shadowColor="#808080"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:padding="8dp"
+            android:text="@string/Cart"
+            android:textColor="@color/orange"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Shop Name"
+            android:textStyle="italic"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartitem123"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:padding="10dp"
+            tools:listitem="@layout/row_cart"
+            android:layout_marginBottom="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceLayout"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: "
+                android:id="@+id/labeltotal"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/orange"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/pricetotallah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/labeltotal"
+                android:text="sdfsdf"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/chechoutbtn"
+            android:textColor="@color/white"
+            android:text="Check Out"
+            android:background="@drawable/round_corner_orange"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

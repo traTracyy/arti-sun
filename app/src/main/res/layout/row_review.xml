@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardElevation="3dp"
+    app:contentPadding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profilelv"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/profile"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_profile"
+                app:c_border="true"
+                app:c_border_width="1dp"
+                app:c_border_color="@color/orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameTv"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@+id/profilelv"
+            android:numStars="5"
+            android:id="@+id/ratingbar"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datetv"
+            android:layout_toEndOf="@+id/ratingbar"
+            android:layout_below="@+id/profilelv"
+            android:text="dateeeeeeeeeeeeee"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewcontent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/datetv"
+            android:text="content..................................."
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

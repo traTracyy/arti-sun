@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_profile_background"
+    tools:context=".SSetting">
+
+
+
+    <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_profile"
+        app:c_border="true"
+        app:c_border_color="@color/orange"
+        app:c_border_width="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/RLayout1"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/username"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="330dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:text="@string/Name"/>
+
+        <EditText
+            android:id="@+id/namehint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_name"
+            android:drawablePadding="15dp"
+            android:hint="@string/namehint"
+            android:layout_below="@+id/nametxt"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/shopntxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/namehint"
+            android:text="@string/ShopName"/>
+
+        <EditText
+            android:id="@+id/shophint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_store"
+            android:drawablePadding="15dp"
+            android:hint="@string/shophint"
+            android:layout_below="@+id/shopntxt"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/shophint"
+            android:text="@string/Address"/>
+
+        <EditText
+            android:id="@+id/emailhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="15dp"
+            android:hint="@string/locationhint"
+            android:layout_below="@+id/emailtxt"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/phonenumbertxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/emailhint"
+            android:text="@string/Phone"/>
+
+        <EditText
+            android:id="@+id/phonenumberhint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_cornerlighter"
+            android:drawableStart="@drawable/ic_phonenumber"
+            android:drawablePadding="15dp"
+            android:hint="@string/pnhint"
+            android:layout_below="@+id/phonenumbertxt"
+            android:layout_marginEnd="20dp"
+            android:inputType="phone"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="210dp"
+            android:layout_below="@+id/phonenumberhint"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_btnborder_lighter"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"
+            android:text="@string/Update"
+            android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/logoutbtn"
+            android:layout_width="130dp"
+            android:layout_below="@+id/updatebtn"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_btnborder_lighter"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:text="@string/Logout"
+            android:layout_marginTop="60dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

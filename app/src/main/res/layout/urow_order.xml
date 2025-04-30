@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_marginBottom="2dp"
+    app:contentPadding="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/round_border"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:id="@+id/orderIdTv"
+            android:layout_marginTop="10dp"
+            android:text="Order: "
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderIdTv"
+            android:id="@+id/shopnametTv"
+            android:textColor="@color/orange"
+            android:text="ShopName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopnametTv"
+            android:id="@+id/amountTv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Total Amount"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:layout_toStartOf="@+id/nextIv"
+            android:id="@+id/dateTv"
+            android:text="date"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextIv"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_next"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#43A047"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/nextIv"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/statusTv"
+            android:text="In progress"
+            android:layout_below="@+id/shopnametTv"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

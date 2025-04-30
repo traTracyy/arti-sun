@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    tools:context=".SOrder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:textSize="16sp"
+            android:shadowColor="#808080"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:id="@+id/fitterOrder"
+            android:text="Showing All Order(s)"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/Rlayoutfilter"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textStyle="italic"
+                android:textSize="17sp"
+                android:textColor="@color/orange"
+                android:id="@+id/filtertxt"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"/>
+
+
+
+            <ImageButton
+                android:background="@null"
+                android:layout_width="35dp"
+                android:layout_toStartOf="@+id/filtertxt"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="15dp"
+                android:id="@+id/filterOrderIb"
+                android:src="@drawable/ic_filter2"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterOrderIb"
+                android:text="==== ==== ==== ==== ==== ==== ==== ==== ===="
+                android:textColor="@color/lighter"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/SordersRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Rlayoutfilter"
+            android:padding="25dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:reverseLayout="true"
+            tools:listitem="@layout/srow_order"
+            app:stackFromEnd="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

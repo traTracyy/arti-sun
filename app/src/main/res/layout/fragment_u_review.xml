@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container1"
+    android:layout_height="match_parent"
+    tools:context=".UReview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/Rlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:id="@+id/bacttxt"
+                android:textColor="@color/black"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="@string/Back"/>
+            <TextView
+                android:id="@+id/pagetitle"
+                android:textColor="@color/black"
+                android:shadowColor="#808080"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="30dp"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="Review"/>
+
+        </RelativeLayout>
+        
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:id="@+id/pimage"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_image"
+            app:c_border="true"
+            app:c_border_width="2dp"
+            app:c_border_color="@color/orange"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/snametv"
+            android:layout_gravity="center_horizontal"
+            android:text="ShopName"
+            android:textColor="@color/orange"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/snametv"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="If you recently had a great shopping experience, take a few minutes to write a review about the shop. Your feedback can help others make informed decisions and provide valuable feedback to the shop owners."
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating"
+            android:numStars="5"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewEt"
+            android:hint="Enter Review Here..."
+            android:drawableStart="@drawable/ic_text2"
+            android:textStyle="italic"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_leaf"
+            android:minHeight="150dp"/>
+        <Button
+            android:id="@+id/donerevbtn"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_orange"
+            app:backgroundTint="@null"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:text="Done"/>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

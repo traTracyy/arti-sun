@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_uhome"
+        android:title="@string/Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/nav_uorder"
+        android:title="@string/Favorite"
+        android:icon="@drawable/ic_order"/>
+
+    <item android:id="@+id/nav_ewallter"
+        android:title="E-Wallet"
+        android:icon="@drawable/ic_ewallet"/>
+
+    <item android:id="@+id/nav_usetting"
+        android:title="@string/Setting"
+        android:icon="@drawable/ic_setting"/>
+</menu>

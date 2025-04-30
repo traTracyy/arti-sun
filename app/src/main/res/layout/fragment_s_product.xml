@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SProduct">
+    <TextView
+        android:id="@+id/welcometxt"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ShopName"
+        android:layout_marginStart="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_below="@+id/welcometxt"
+            android:id="@+id/addbtn"
+            android:layout_marginEnd="10dp"
+            android:layout_width="160dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_corner"
+            android:padding="8dp"
+            android:layout_marginStart="225dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/addtext"
+                android:layout_marginStart="6dp"
+                android:text="@string/Add"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_add"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rlayout2"
+            android:layout_below="@+id/addbtn"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/SearchProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textStyle="italic"
+                android:hint="Search Field..."
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/filter"
+                android:background="@drawable/round_cornerlighter"
+                android:drawableEnd="@drawable/ic_search2"
+                android:drawablePadding="10dp"
+                android:padding="10dp" />
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/filter"
+                android:layout_alignStart="@+id/Sea"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_filter"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showalltxt"
+                android:layout_below="@id/SearchProduct"
+                android:text="Showing All"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productsRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/srow_product"
+                android:layout_below="@+id/showalltxt"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

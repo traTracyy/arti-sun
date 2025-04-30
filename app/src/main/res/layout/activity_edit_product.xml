@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_profile_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".EditProductActivity">
+
+        <RelativeLayout
+            android:id="@+id/Rlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp">
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_back"/>
+            <TextView
+                android:id="@+id/bacttxt"
+                android:textColor="@color/black"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="@string/Back"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Rlayout1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/productImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_pupload"
+                app:c_border="true"
+                app:c_border_color="@color/orange"
+                app:c_border_width="1dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productImg"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/orange"
+                android:text="Upload Product Image"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Rlayout3"
+            android:layout_marginTop="170dp"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/Pname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_text"
+                android:drawablePadding="15dp"
+                android:padding="8dp"
+                android:inputType="textPersonName|textCapWords"
+                android:layout_marginTop="20dp"
+                android:hint="Product Name"
+                android:background="@drawable/shape_btnborder_lighter"/>
+            <EditText
+                android:id="@+id/Pdescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_text"
+                android:drawablePadding="15dp"
+                android:padding="8dp"
+                android:inputType="textCapSentences|textImeMultiLine"
+                android:layout_below="@+id/Pname"
+                android:layout_marginTop="20dp"
+                android:hint="Product Description"
+                android:background="@drawable/shape_btnborder_lighter"/>
+            <EditText
+                android:id="@+id/Pprice"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_price"
+                android:drawablePadding="15dp"
+                android:padding="8dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Pdescription"
+                android:inputType="numberDecimal"
+                android:hint="Price"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_btnborder_lighter"/>
+            <EditText
+                android:id="@+id/Pquantity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/ic_quantity"
+                android:drawablePadding="15dp"
+                android:padding="8dp"
+                android:layout_below="@+id/Pprice"
+                android:numeric="integer"
+                android:layout_marginTop="20dp"
+                android:hint="Quantity"
+                android:background="@drawable/shape_btnborder_lighter"/>
+            <TextView
+                android:id="@+id/Pcategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_corner"
+                android:drawableStart="@drawable/ic_categoty"
+                android:drawablePadding="15dp"
+                android:padding="8dp"
+                android:hint="Category"
+                android:textColorHint="@color/white"
+                android:inputType="textCapWords"
+                android:drawableEnd="@drawable/ic_down"
+                android:layout_below="@+id/Pquantity"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/saveproductbtn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/orange"
+                android:background="@drawable/round_corner"
+                android:layout_below="@+id/Pcategory"
+                android:text="Save"/>
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UOrder">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ohistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="#808080"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:text="Order History:"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="20dp"
+            android:id="@+id/ordersRv"
+            app:stackFromEnd="true"
+            android:layout_below="@+id/ohistory"
+            app:reverseLayout="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/urow_order"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
